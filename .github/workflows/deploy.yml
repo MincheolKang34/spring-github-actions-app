@@ -16,6 +16,9 @@ jobs:
           java-version: "17"
           distribution: temurin
 
+      - name: Check if gradlew exists
+        run: ls -l
+
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
